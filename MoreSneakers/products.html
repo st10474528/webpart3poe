@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Sneakers Collection | Nike, Adidas, Puma & More - MoreSneakers</title>
+    <meta name="description" content="Shop premium authentic sneakers from top brands. Nike Air Jordans, Adidas Campus, Puma Suede, Timberland boots & Vans. Free shipping over R1000 in South Africa.">
+    <meta name="keywords" content="buy sneakers South Africa, Nike Air Jordan, Adidas Campus, Puma sneakers, Timberland boots, Vans shoes, premium footwear, authentic sneakers">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://moresneakers.com/products.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Premium Sneakers Collection | MoreSneakers">
+    <meta property="og:description" content="Authentic sneakers from top brands. Free shipping available in South Africa.">
+    <meta property="og:image" content="https://moresneakers.com/IMAGE/logo.jpg">
+    <meta property="og:url" content="https://moresneakers.com/products.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium Sneakers Collection | MoreSneakers">
+    <meta name="twitter:description" content="Shop authentic sneakers from top brands in South Africa.">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Premium Sneakers Collection",
+      "description": "Authentic sneakers from top brands including Nike, Adidas, Puma, Timberland and Vans",
+      "url": "https://moresneakers.com/products.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": 6,
+        "itemListElement": [
+          {
+            "@type": "Product",
+            "position": 1,
+            "name": "Nike Air Jordan 1",
+            "description": "Iconic basketball sneakers that never go out of style.",
+            "offers": {
+              "@type": "Offer",
+              "price": "2499.99",
+              "priceCurrency": "ZAR"
+            }
+          },
+          {
+            "@type": "Product",
+            "position": 2,
+            "name": "Nike Air Jordan 4",
+            "description": "Classic design with modern comfort and style.",
+            "offers": {
+              "@type": "Offer",
+              "price": "2100.00",
+              "priceCurrency": "ZAR"
+            }
+          },
+          {
+            "@type": "Product",
+            "position": 3,
+            "name": "Timberlands Premium Boots",
+            "description": "Premium boots built for durability and style.",
+            "offers": {
+              "@type": "Offer",
+              "price": "4999.99",
+              "priceCurrency": "ZAR"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="CSS/products.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <img src="IMAGE/logo.jpg" alt="MoreSneakers Logo - Premium Sneaker Store in South Africa" width="100" height="100">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html" class="active" aria-current="page">Products and Services</a></li>
+                    <li><a href="news and updates.html">News Update</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="enquiry.html" class="active">Enquire</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cartToggle">
+                            <i class="fas fa-shopping-cart"></i> Cart 
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Premium Sneakers Collection</h1>
+                <p>Discover authentic sneakers from top brands including Nike, Adidas, Puma, Timberland and Vans</p>
+            </div>
+        </section>
+        
+        <section class="filter-section">
+            <div class="container">
+                <h2>Filter by Category</h2>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="nike">Nike</button>
+                    <button class="filter-btn" data-filter="puma">Puma</button>
+                    <button class="filter-btn" data-filter="adidas">Adidas</button>
+                    <button class="filter-btn" data-filter="timberland">Timberland</button>
+                    <button class="filter-btn" data-filter="vans">Vans</button>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for sneakers..." id="searchInput" aria-label="Search for sneakers">
+                        <button id="searchBtn">
+                            <i class="fas fa-search"></i> Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="products-section" itemscope itemtype="https://schema.org/ItemList">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="products-grid">
+                    <div class="product-card" data-category="nike" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-badge">Hot</div>
+                        <img src="IMAGE/d.webp" alt="Nike Air Jordan 1 Red Basketball Sneakers - Premium Quality" width="300" height="250" itemprop="image" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Nike+Air+Jordan+1'">
+                        <div class="product-info">
+                            <h3 itemprop="name">Nike Air Jordan 1</h3>
+                            <p itemprop="description">Iconic basketball sneakers that never go out of style.</p>
+                            <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">Price: <b>R<span itemprop="price" content="2499.99">2499.99</span></b></p>
+                            <button class="add-to-cart" data-id="1" data-product="Nike Air Jordan 1" data-price="2499.99" data-image="IMAGE/d.webp">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="nike" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-badge">New</div>
+                        <img src="IMAGE/f.webp" alt="Nike Air Jordan 4 Black Basketball Shoes - Classic Design" width="300" height="250" itemprop="image" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Nike+Air+Jordan+4'">
+                        <div class="product-info">
+                            <h3 itemprop="name">Nike Air Jordan 4</h3>
+                            <p itemprop="description">Classic design with modern comfort and style.</p>
+                            <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">Price: <b>R<span itemprop="price" content="2100.00">2100.00</span></b></p>
+                            <button class="add-to-cart" data-id="2" data-product="Nike Air Jordan 4" data-price="2100.00" data-image="IMAGE/f.webp">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="timberland" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <div class="product-badge">Premium</div>
+                        <img src="IMAGE/g.webp" alt="Timberland Premium Brown Boots - Durable and Stylish" width="300" height="250" itemprop="image" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Timberlands'">
+                        <div class="product-info">
+                            <h3 itemprop="name">Timberlands</h3>
+                            <p itemprop="description">Premium boots built for durability and style.</p>
+                            <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">Price: <b>R<span itemprop="price" content="4999.99">4999.99</span></b></p>
+                            <button class="add-to-cart" data-id="3" data-product="Timberlands" data-price="4999.99" data-image="IMAGE/g.webp">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="vans" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <img src="IMAGE/h.webp" alt="Vans Old Skool KNU Black Skate Shoes - Classic Style" width="300" height="250" itemprop="image" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Vans+Old+Skool'">
+                        <div class="product-info">
+                            <h3 itemprop="name">Vans Old Skool KNU</h3>
+                            <p itemprop="description">Classic design with modern comfort and style.</p>
+                            <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">Price: <b>R<span itemprop="price" content="1800.00">1800.00</span></b></p>
+                            <button class="add-to-cart" data-id="4" data-product="Vans Old Skool KNU" data-price="1800.00" data-image="IMAGE/h.webp">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="puma" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <img src="IMAGE/b.webp" alt="Puma Suede XL Black Sneakers - Timeless Style" width="300" height="250" itemprop="image" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Puma+Suede+XL'">
+                        <div class="product-info">
+                            <h3 itemprop="name">Puma Suede XL</h3>
+                            <p itemprop="description">Premium suede sneakers with timeless style.</p>
+                            <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">Price: <b>R<span itemprop="price" content="1500.00">1500.00</span></b></p>
+                            <button class="add-to-cart" data-id="5" data-product="Puma Suede XL" data-price="1500.00" data-image="IMAGE/b.webp">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="adidas" itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
+                        <img src="IMAGE/c.webp" alt="Adidas Campus 00s White Retro Sneakers - Iconic Design" width="300" height="250" itemprop="image" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Adidas+Campus'">
+                        <div class="product-info">
+                            <h3 itemprop="name">Adidas Campus</h3>
+                            <p itemprop="description">Iconic retro sneakers with modern comfort.</p>
+                            <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">Price: <b>R<span itemprop="price" content="1699.00">1699.00</span></b></p>
+                            <button class="add-to-cart" data-id="6" data-product="Adidas Campus" data-price="1699.00" data-image="IMAGE/c.webp">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services-section">
+            <div class="container">
+                <h2>Our Premium Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">✓</div>
+                        <h3>100% Authenticity Guarantee</h3>
+                        <p>All our products come with a 100% authenticity guarantee and verification.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🚚</div>
+                        <h3>Free Shipping Nationwide</h3>
+                        <p>Free delivery on orders over R1000 anywhere in South Africa. Fast 2-3 day delivery.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">↩️</div>
+                        <h3>30-Day Easy Returns</h3>
+                        <p>Not satisfied? Return within 30 days for a full refund or exchange.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3>Secure Payment</h3>
+                        <p>Your payment information is protected with bank-level security encryption.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li aria-current="page">Products</li>
+                </ol>
+            </div>
+        </nav>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="close-cart" id="closeCart" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart" id="emptyCart">
+                <p>Your cart is empty</p>
+                <p>Browse our collection of premium sneakers</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: R<span id="cartTotal">0.00</span></strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+            <button class="clear-cart-btn" id="clearCartBtn">Clear Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MoreSneakers</h3>
+                    <p>Your trusted source for premium authentic sneakers in South Africa since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="news-updates.html">News & Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="shipping.html">Shipping Info</a></li>
+                        <li><a href="returns.html">Returns Policy</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2025 MoreSneakers. All Rights Reserved. | Premium Sneaker Store South Africa</p>
+            <p>&copy; ST10474528</p>
+        </div>
+    </footer>
+
+    <script src="JAVASCRIPT/product.js"></script>
+    
+    <!-- Fallback JavaScript if external file fails -->
+    <script>
+        // Simple fallback to check if JavaScript is working
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Products page loaded successfully');
+            
+            // Quick test to see if buttons are found
+            const buttons = document.querySelectorAll('.add-to-cart');
+            console.log('Found add-to-cart buttons:', buttons.length);
+            
+            // Basic fallback functionality
+            if (buttons.length > 0) {
+                buttons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        const productName = this.getAttribute('data-product');
+                        console.log('Add to Cart clicked:', productName);
+                        
+                        // Update cart count
+                        const cartCount = document.getElementById('cartCount');
+                        if (cartCount) {
+                            let currentCount = parseInt(cartCount.textContent) || 0;
+                            cartCount.textContent = currentCount + 1;
+                            cartCount.setAttribute('aria-label', `${currentCount + 1} items in cart`);
+                        }
+                        
+                        // Basic visual feedback
+                        this.style.backgroundColor = '#4CAF50';
+                        this.textContent = 'Added!';
+                        setTimeout(() => {
+                            this.style.backgroundColor = '';
+                            this.textContent = 'Add to Cart';
+                        }, 1000);
+                    });
+                });
+            }
+            
+            // Basic search functionality
+            const searchInput = document.getElementById('searchInput');
+            const searchBtn = document.getElementById('searchBtn');
+            
+            if (searchInput && searchBtn) {
+                searchBtn.addEventListener('click', function() {
+                    const query = searchInput.value.trim().toLowerCase();
+                    if (query) {
+                        console.log('Searching for:', query);
+                        // Basic search feedback
+                        searchInput.value = '';
+                        searchInput.placeholder = `Searching for "${query}"...`;
+                        setTimeout(() => {
+                            searchInput.placeholder = 'Search for sneakers...';
+                        }, 2000);
+                    }
+                });
+                
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        searchBtn.click();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,655 @@
+/* Main styles for MoreSneakers contact page */
+:root {
+    --primary-color: #333333;
+    --secondary-color: #ffffff;
+    --accent-color: #1779f1;
+    --success-color: #2ecc71;
+    --light-gray: #f5f5f5;
+    --border-color: #ddd;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    margin-right: 15px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+}
+
+.logo-container h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--accent-color);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: var(--transition);
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+/* Contact Header */
+.contact-header {
+    background-color: var(--light-gray);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.contact-header h1 {
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Content */
+.contact-content {
+    padding: 3rem 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-form h2,
+.contact-info h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Form Styles */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(23, 121, 241, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.error-message {
+    color: var(--accent-color);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+    border-color: var(--accent-color);
+}
+
+.form-group.success input,
+.form-group.success textarea {
+    border-color: var(--success-color);
+}
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #0d6efd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.submit-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.spinner {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 8px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.submit-btn.loading .spinner {
+    display: inline-block;
+}
+
+.success-message {
+    background-color: var(--success-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    text-align: center;
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Contact Info Styles */
+.info-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.info-section p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.info-section strong {
+    color: var(--primary-color);
+}
+
+/* Map Styles */
+.map-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.map-wrapper {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.map-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: var(--transition);
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.map-overlay:hover {
+    opacity: 1;
+}
+
+/* Accordion Styles */
+.accordion {
+    margin-top: 3rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+
+.accordion h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.accordion-header {
+    padding: 1rem 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.accordion-header:hover {
+    color: var(--accent-color);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    padding: 0 1rem;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 500px;
+    padding-bottom: 1rem;
+}
+
+.accordion-icon {
+    transition: var(--transition);
+    font-size: 0.8rem;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+/* Search Styles */
+.search-container {
+    margin-bottom: 1.5rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(23, 121, 241, 0.2);
+}
+
+.no-results {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+/* Text Highlighting */
+mark {
+    background-color: #ffeaa7;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* SEO Optimization Styles */
+/* Added for better search engine visibility and structure */
+
+/* Schema.org structured data visual enhancements */
+.schema-info {
+    display: none; /* Hidden from users but accessible to crawlers */
+}
+
+/* Rich snippet styling for potential SERP enhancements */
+.breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.breadcrumb a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Semantic HTML enhancements for better content structure */
+.content-section {
+    margin: 2rem 0;
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.content-section h3 {
+    color: var(--primary-color);
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Image optimization enhancements */
+.optimized-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Internal linking suggestions */
+.internal-links {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--accent-color);
+}
+
+.internal-links h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.internal-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.internal-links li {
+    margin-bottom: 0.5rem;
+}
+
+.internal-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.internal-links a:hover {
+    text-decoration: underline;
+    color: #0d6efd;
+}
+
+/* Page speed optimization elements */
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}
+
+/* Mobile-first responsive enhancements */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px 10px;
+    }
+    
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-header p {
+        font-size: 1rem;
+    }
+    
+    .accordion-header {
+        padding: 0.75rem 0;
+    }
+    
+    .info-section {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .map-overlay div {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+    
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .internal-links {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-container img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .contact-header {
+        padding: 2rem 0;
+    }
+    
+    .contact-content {
+        padding: 2rem 0;
+    }
+}
+
+/* Print styles for better accessibility and SEO */
+@media print {
+    .internal-links,
+    .map-overlay,
+    .search-container {
+        display: none;
+    }
+    
+    .contact-grid {
+        display: block;
+    }
+    
+    .contact-form,
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Focus styles for better accessibility (indirect SEO benefit) */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--accent-color);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1001;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 6px;
+}

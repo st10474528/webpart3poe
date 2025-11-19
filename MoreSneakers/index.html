@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoreSneakers | Premium Sneakers Store - Nike, Adidas, Puma & Timberland</title>
+    <meta name="description" content="Buy premium sneakers from Nike, Adidas, Puma, Timberland & Vans. Latest sneaker trends with free shipping on orders over R1000. Shop Air Jordans, Timberlands & Vans in South Africa.">
+    <meta name="keywords" content="sneakers, nike shoes, adidas, puma, timberland boots, vans, air jordan, running shoes, buy sneakers South Africa">
+    <link rel="canonical" href="https://moresneakers.com">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="MoreSneakers | Premium Sneakers Store">
+    <meta property="og:description" content="Shop the latest sneakers from top brands. Free shipping available in South Africa.">
+    <meta property="og:image" content="https://moresneakers.com/images/moresneakers-logo.jpg">
+    <meta property="og:url" content="https://moresneakers.com">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MoreSneakers | Premium Sneakers Store">
+    <meta name="twitter:description" content="Shop the latest sneakers from top brands in South Africa.">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "MoreSneakers",
+      "description": "Premium sneakers store offering the latest brands and styles",
+      "url": "https://moresneakers.com",
+      "telephone": "+27-81-272-3183",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "48 Bodmas Street",
+        "addressLocality": "Midrand",
+        "addressCountry": "ZA"
+      },
+      "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-14:00",
+      "priceRange": "R1500 - R5000"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <img src="IMAGE/logo.jpg" alt="MoreSneakers Logo - Premium Sneaker Store" width="100" height="100">
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">Home Page</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products and Services</a></li>
+                    <li><a href="news and updates.html">News Update</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="enquiry.html" class="active">Enquire</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cartLink">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-counter" id="cartCounter">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to MoreSneakers - Premium Footwear Store</h1>
+            <h2>Step into Style with Premium Footwear</h2>
+            <div class="hero-buttons">
+                <button class="cta-button" id="shopNowBtn">Shop Now</button>
+                <button class="cta-button secondary" id="viewCollectionBtn">View Collection</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Banner -->
+    <section class="special-offers">
+        <div class="container">
+            <h2>Special Launch Offer</h2>
+            <p>Get 20% OFF on your first purchase with code: <strong>WELCOME20</strong></p>
+            <div class="countdown-timer" id="countdownTimer">
+                Offer ends in: <span id="countdown">24:00:00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Sneakers</h2>
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="nike">Nike</button>
+                <button class="filter-btn" data-filter="puma">Puma</button>
+                <button class="filter-btn" data-filter="adidas">Adidas</button>
+                <button class="filter-btn" data-filter="timberland">Timberland</button>
+                <button class="filter-btn" data-filter="vans">Vans</button>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card" data-category="nike">
+                    <div class="product-badge">Hot</div>
+                    <img src="IMAGE/d.webp" alt="Nike Air Jordan 1 Red Basketball Sneakers - Premium Quality" width="300" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Nike+Air+Jordan+1'">
+                    <div class="product-info">
+                        <h3>Nike Air Jordan 1</h3>
+                        <p>Iconic basketball sneakers that never go out of style.</p>
+                        <p class="price">Price: <b>R2499.99</b></p>
+                        <button class="add-to-cart" data-id="1" data-product="Nike Air Jordan 1" data-price="2499.99" data-image="IMAGE/d.webp">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="nike">
+                    <div class="product-badge">New</div>
+                    <img src="IMAGE/f.webp" alt="Nike Air Jordan 4 Black Basketball Shoes - Classic Design" width="300" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Nike+Air+Jordan+4'">
+                    <div class="product-info">
+                        <h3>Nike Air Jordan 4</h3>
+                        <p>Classic design with modern comfort and style.</p>
+                        <p class="price">Price: <b>R2100.00</b></p>
+                        <button class="add-to-cart" data-id="2" data-product="Nike Air Jordan 4" data-price="2100.00" data-image="IMAGE/f.webp">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="timberland">
+                    <div class="product-badge">Premium</div>
+                    <img src="IMAGE/g.webp" alt="Timberland Premium Brown Boots - Durable and Stylish" width="300" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Timberlands'">
+                    <div class="product-info">
+                        <h3>Timberlands</h3>
+                        <p>Premium boots built for durability and style.</p>
+                        <p class="price">Price: <b>R4999.99</b></p>
+                        <button class="add-to-cart" data-id="3" data-product="Timberlands" data-price="4999.99" data-image="IMAGE/g.webp">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="vans">
+                    <img src="IMAGE/h.webp" alt="Vans Old Skool KNU Black Skate Shoes - Classic Style" width="300" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Vans+Old+Skool'">
+                    <div class="product-info">
+                        <h3>Vans Old Skool KNU</h3>
+                        <p>Classic design with modern comfort and style.</p>
+                        <p class="price">Price: <b>R1800.00</b></p>
+                        <button class="add-to-cart" data-id="4" data-product="Vans Old Skool KNU" data-price="1800.00" data-image="IMAGE/h.webp">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="puma">
+                    <img src="IMAGE/b.webp" alt="Puma Suede XL Black Sneakers - Timeless Style" width="300" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Puma+Suede+XL'">
+                    <div class="product-info">
+                        <h3>Puma Suede XL</h3>
+                        <p>Premium suede sneakers with timeless style.</p>
+                        <p class="price">Price: <b>R1500.00</b></p>
+                        <button class="add-to-cart" data-id="5" data-product="Puma Suede XL" data-price="1500.00" data-image="IMAGE/b.webp">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="adidas">
+                    <img src="IMAGE/c.webp" alt="Adidas Campus 00s White Retro Sneakers - Iconic Design" width="300" onerror="this.src='https://via.placeholder.com/300x250/0d7feb/ffffff?text=Adidas+Campus'">
+                    <div class="product-info">
+                        <h3>Adidas Campus</h3>
+                        <p>Iconic retro sneakers with modern comfort.</p>
+                        <p class="price">Price: <b>R1699.00</b></p>
+                        <button class="add-to-cart" data-id="6" data-product="Adidas Campus" data-price="1699.00" data-image="IMAGE/c.webp">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section class="interactive-elements">
+        <div class="container">
+            <h2>Interactive Elements</h2>
+            
+            <!-- Accordion -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Why Choose MoreSneakers?</div>
+                    <div class="accordion-content">
+                        <p>We offer the latest sneaker trends, premium quality, and exceptional customer service. Our collection is carefully curated to bring you the best styles from top brands.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Shipping & Returns</div>
+                    <div class="accordion-content">
+                        <p>We offer free shipping on orders over R1000. Returns are accepted within 30 days of purchase for unworn items in original packaging.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Size Guide</div>
+                    <div class="accordion-content">
+                        <p>Refer to our detailed size guide for each product to ensure the perfect fit. If you're between sizes, we recommend sizing up.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab-headers">
+                    <div class="tab-header active" data-tab="tab1">New Arrivals</div>
+                    <div class="tab-header" data-tab="tab2">Best Sellers</div>
+                    <div class="tab-header" data-tab="tab3">Coming Soon</div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <p>Check out our latest sneaker drops from top brands. New styles added weekly!</p>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <p>Discover our most popular sneakers that customers love. These styles are consistently top-rated.</p>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <p>Get a sneak peek at upcoming releases. Sign up for notifications to be the first to know.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Search -->
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for sneakers..." id="searchInput">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <h2>Visit Our Store</h2>
+            <div class="map-container" id="map">
+                <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: #f1f1f1; color: #777;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                        <p>Interactive Map</p>
+                        <p>48 Bodmas Street, Midrand</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Trigger -->
+            <button class="cta-button" data-modal="contactModal">Contact Us</button>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive deals and new arrivals</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required id="newsletterEmail">
+                    <button type="submit" id="newsletterSubmit">
+                        <span class="btn-text">Subscribe</span>
+                        <span class="loading" style="display: none;"></span>
+                    </button>
+                </form>
+                <div class="newsletter-message" id="newsletterMessage"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MoreSneakers</h3>
+                    <p>Your trusted partner for authentic and stylish sneakers since 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="news-updates.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 48 Bodmas Street, Midrand</p>
+                    <p><i class="fas fa-phone"></i> +27 81 272 3183</p>
+                    <p><i class="fas fa-envelope"></i> moresneakers@gmail.com</p>
+                </div>
+            </div>
+            <p>&copy; 2025 MoreSneakers. All Rights Reserved.</p>
+            <p>&copy; ST10474528</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart" id="emptyCart">
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: R<span id="cartTotal">0.00</span></strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+            <button class="clear-cart-btn" id="clearCartBtn">Clear Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Contact Us</h3>
+            <form id="contactForm">
+                <div style="margin-bottom: 15px;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" style="width: 100%; padding: 8px; margin-top: 5px;" required>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" style="width: 100%; padding: 8px; margin-top: 5px;" required>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" style="width: 100%; padding: 8px; margin-top: 5px;" required></textarea>
+                </div>
+                <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <span class="lightbox-nav lightbox-prev">&lt;</span>
+        <span class="lightbox-nav lightbox-next">&gt;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="">
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="JAVASCRIPT/index.js"></script>
+
+    <!-- Fallback JavaScript -->
+    <script>
+        // Basic fallback functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Home page loaded successfully');
+            
+            // Cart link functionality
+            const cartLink = document.getElementById('cartLink');
+            if (cartLink) {
+                cartLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Cart functionality will be implemented soon!');
+                });
+            }
+            
+            // CTA buttons functionality
+            const shopNowBtn = document.getElementById('shopNowBtn');
+            const viewCollectionBtn = document.getElementById('viewCollectionBtn');
+            
+            if (shopNowBtn) {
+                shopNowBtn.addEventListener('click', function() {
+                    window.location.href = 'products.html';
+                });
+            }
+            
+            if (viewCollectionBtn) {
+                viewCollectionBtn.addEventListener('click', function() {
+                    window.location.href = 'products.html';
+                });
+            }
+            
+            // Add to Cart buttons basic functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productName = this.getAttribute('data-product');
+                    this.style.backgroundColor = '#4CAF50';
+                    this.textContent = 'Added!';
+                    
+                    setTimeout(() => {
+                        this.style.backgroundColor = '';
+                        this.textContent = 'Add to Cart';
+                    }, 1000);
+                    
+                    // Update cart counter
+                    const cartCounter = document.getElementById('cartCounter');
+                    if (cartCounter) {
+                        let currentCount = parseInt(cartCounter.textContent) || 0;
+                        cartCounter.textContent = currentCount + 1;
+                    }
+                    
+                    console.log('Added to cart:', productName);
+                });
+            });
+            
+            // Countdown timer
+            function updateCountdown() {
+                const countdownElement = document.getElementById('countdown');
+                if (countdownElement) {
+                    // Simple countdown for demo
+                    const time = countdownElement.textContent.split(':');
+                    let hours = parseInt(time[0]);
+                    let minutes = parseInt(time[1]);
+                    let seconds = parseInt(time[2]);
+                    
+                    seconds--;
+                    if (seconds < 0) {
+                        seconds = 59;
+                        minutes--;
+                        if (minutes < 0) {
+                            minutes = 59;
+                            hours--;
+                            if (hours < 0) {
+                                hours = 23;
+                            }
+                        }
+                    }
+                    
+                    countdownElement.textContent = 
+                        hours.toString().padStart(2, '0') + ':' +
+                        minutes.toString().padStart(2, '0') + ':' +
+                        seconds.toString().padStart(2, '0');
+                }
+            }
+            
+            setInterval(updateCountdown, 1000);
+        });
+    </script>
+</body>
+</html>
